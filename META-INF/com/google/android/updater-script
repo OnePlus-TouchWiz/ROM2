@@ -1,6 +1,7 @@
 #ASSERT
-assert(getprop("ro.product.device") == "hero2qltechn" || getprop("ro.build.product") == "hero2qltechn" || getprop("ro.product.name") == "hero2qltechn" ||
-	abort("This package is for \"hero2qltechn\" devices; this is a \"" + getprop("ro.product.device") + "\"."););
+assert(getprop("ro.product.device") == "OnePlus3" || getprop("ro.build.product") == "OnePlus3" || getprop("ro.product.name") == "OnePlus3" ||
+	getprop("ro.product.device") == "oneplus3" || getprop("ro.build.product") == "oneplus3" || getprop("ro.product.name") == "oneplus3" ||
+	abort("This package is for \"OnePlus3,oneplus3\" devices; this is a \"" + getprop("ro.product.device") + "\"."););
 ifelse(is_mounted("/system"), unmount("/system"));
 show_progress(1.000000, 0);
 ui_print(" ");
@@ -416,8 +417,14 @@ set_progress(0.700000);
 ui_print(" "); ui_print("Extracting boot image..."); ui_print(" ");
 package_extract_file("boot.img", file_getprop("/tmp/config", "byname") + "/boot" + file_getprop("/tmp/config", "slotnum")); set_progress(0.800000);
 #ROOT
+package_extract_dir("rootzip", "/tmp/rootzip");
+run_program("/sbin/busybox", "unzip", "/tmp/rootzip/SuperSU-v2.79-SR3.zip", "META-INF/com/google/android/*", "-d", "/tmp/rootzip");
+run_program("/sbin/sh", "/tmp/rootzip/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/rootzip/SuperSU-v2.79-SR3.zip");
 ui_print(" ");
 #BUSYBOX
+package_extract_dir("busybox", "/tmp/busybox");
+run_program("/sbin/busybox", "unzip", "/tmp/busybox/UPDATE-Busybox.Installer.v1.26.2-ALL-signed.zip", "META-INF/com/google/android/*", "-d", "/tmp/busybox");
+run_program("/sbin/sh", "/tmp/busybox/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/busybox/UPDATE-Busybox.Installer.v1.26.2-ALL-signed.zip");
 set_progress(0.900000);
 ifelse(is_mounted("/system"), unmount("/system"));
 set_progress(1.000000);
