@@ -1,0 +1,12 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<SW-Configuration>
+	<MobileData>
+	<PublicName>SM-G9350</PublicName>
+	</MobileData>
+	<CustomerDataSet>
+	<CSCName>G9350CHC</CSCName>
+	<CSCVersion>2APJ7</CSCVersion>
+	<NbCustomer>1</NbCustomer>
+	<CustomerData src="/Customer/CHC/customer.xml" />
+	</CustomerDataSet>
+</SW-Configuration>

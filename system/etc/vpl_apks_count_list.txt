@@ -1,0 +1,17 @@
+/system/preload/OneNote/OneNote.apk
+/system/preload/Alipay_V9.0_Deletable/Alipay_V9.0_Deletable.apk
+/system/preload/WeChat_V6.0_Deletable/WeChat_V6.0_Deletable.apk
+/system/preload/Sinamicroblog_V5.0_Deletable/Sinamicroblog_V5.0_Deletable.apk
+/system/preload/BaiduMap_V8.0_Deletable/BaiduMap_V8.0_Deletable.apk
+/system/preload/SAssistant_downloadable/SAssistant_downloadable.apk
+/system/preload/SmartSwitch/SmartSwitch.apk
+/system/preload/GalaxyCare_CHN_Deletable/GalaxyCare_CHN_Deletable.apk
+/system/preload/SohuNews_V5.0_S7/SohuNews_V5.0_S7.apk
+/system/preload/SamsungCloudAli/SamsungCloudAli.apk
+/system/preload/VoiceNote_4.0/VoiceNote_4.0.apk
+/system/preload/SecMemo3/SecMemo3.apk
+/system/preload/SohuNewsEdge_V2.0_Deletable/SohuNewsEdge_V2.0_Deletable.apk
+/system/preload/SecCalculator_M/SecCalculator_M.apk
+/system/preload/Word_SamsungStub/Word_SamsungStub.apk
+/system/preload/Excel_SamsungStub/Excel_SamsungStub.apk
+/system/preload/PowerPoint_SamsungStub/PowerPoint_SamsungStub.apk
